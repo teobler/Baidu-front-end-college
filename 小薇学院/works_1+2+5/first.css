@@ -1,6 +1,9 @@
-html, body{
-	margin: 0px;
-	padding: 0px;
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
 	background-color: #999;
 }
 
@@ -27,17 +30,14 @@ dd p{
 	margin-left:-2em;
 }
 
-dd img{
-	disp lay : inline-block;
-}
-
 tr{
 	border:1px solid #aaa;
 }
 
 img{
-	width:250px;
-	height:200px;
+	width: 90%;
+	height: auto;
+	max-width: 100%;
 }
 
 strong{
@@ -68,7 +68,6 @@ strong{
 	float: right;
 	width: auto;
 	padding:4vh 10px;
-
 }
 
 .clear{
