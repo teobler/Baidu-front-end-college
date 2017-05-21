@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+
+  <h3>污染城市列表</h3>
+  <ul id="aqi-list">
+<!--
+    <li>第一名：福州（样例），10</li>
+      <li>第二名：福州（样例），10</li> -->
+  </ul>
+
+<script type="text/javascript">
+
+var aqiData = [
+  ["北京", 90],
+  ["上海", 50],
+  ["福州", 10],
+  ["广州", 50],
+  ["成都", 90],
+  ["西安", 100]
+];
+
+(function (){
+
+  /*
+  在注释下方编写代码
+  遍历读取aqiData中各个城市的数据
+  将空气质量指数大于60的城市显示到aqi-list的列表中
+  */
+  var num = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"];
+  var list = document.getElementById("aqi-list");
+  var data = [[], []];
+  var j = 0;
+
+  // data[j] = aqiData[j];
+  // alert(aqiData[j] + data[j]);
+  //将大于60的城市数据放到data数组中。
+  for (var i = 0; i < aqiData.length; i++) {
+    if (aqiData[i][1] > 60) {
+      data[j] = aqiData[i];
+      j++;
+    };
+  };
+
+  //按照从大到小进行排序(冒泡)
+  // for (var i = 0; i < data.length; i++) {
+  //   for (var j = i + 1; j < data.length; j++) {
+  //     if (data[i][1] < data[j][1]) {
+  //       var temp = [];
+  //       temp[0] = data[i];
+  //       data[i] = data[j];
+  //       data[j] = temp[0];
+  //     }
+  //   }
+  // }
+
+  //排序方法：后-前 降序 反之～
+  data.sort(function(x, y){
+    return (y[1] - x[1]);
+  });
+
+  //更新到dom文档中
+  for (var j = 0, k = 0; j < data.length; j++) {
+    var node = document.createElement("li");
+    var text = "第" + num[k] + "名:";
+    list.appendChild(node);
+    node.innerHTML = text + data[j];
+    k++;
+  }
+
+})();
+
+
+</script>
+</body>
+</html>

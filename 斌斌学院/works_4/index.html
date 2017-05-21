@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>任务四-队列模拟</title>
+    <style>
+      #tip{
+        color:red;
+      }
+
+      #queue div{
+        background-color: red;
+        width:60px;
+        height: 60px;
+        display: inline-block;
+        text-align: center;
+        margin:40px 10px 10px 10px;
+      }
+
+      #queue p{
+        font-weight: bold;
+        margin:22px 0 0 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class = "control">
+      <input type = "text" id = "num" placeholder = "please input only number"/>
+      <button id = "leftIn">左侧入</button>
+      <button id = "rightIn">右侧入</button>
+      <button id = "leftOut">左侧出</button>
+      <button id = "rightOut">右侧出</button>
+      <p id = "tip"></p>
+    </div>
+
+
+    <div id = "queue">
+
+    </div>
+
+    <script type = "text/javascript" src = "./index.js"></script>
+  </body>
+</html>
