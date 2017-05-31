@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>任务五-排列模拟</title>
+    <style>
+      #tip{
+        color:red;
+      }
+
+      #queue{
+        height:auto;
+        display:flex;
+        align-items: flex-end;
+      }
+
+      #queue div{
+        background-color: red;
+        width:20px;
+        display: inline-block;
+        margin:40px 3px 3px 3px;
+        display:flex;
+        align-items: flex-end;
+      }
+
+      #queue p{
+        font-weight: bold;
+        margin:0 auto;
+      }
+
+      .input{
+        width:300px;
+        height: 15px;
+        padding:5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class = "control">
+      <input class = "input" type = "text" id = "num" placeholder = "input a number between 10 and 100"/>
+      <button id = "leftIn">左侧入</button>
+      <button id = "rightIn">右侧入</button>
+      <button id = "leftOut">左侧出</button>
+      <button id = "rightOut">右侧出</button>
+      <button id = "sort">排序</button>
+      <p id = "tip"></p>
+    </div>
+
+
+    <div id = "queue">
+
+    </div>
+
+    <script type = "text/javascript" src = "./index.js"></script>
+  </body>
+</html>

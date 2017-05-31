@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>任务六-查询模拟</title>
+    <style>
+
+      span{
+        color:#fff;
+        
+      }
+
+      #tip{
+        color:red;
+      }
+
+      #queue{
+        height:auto;
+        display:flex;
+        align-items: flex-end;
+      }
+
+      #queue div{
+        background-color: red;
+        width:auto;
+        height:30px;
+        display: inline-block;
+        margin:40px 3px 3px 3px;
+        padding: 5px;
+        display:flex;
+        align-items: flex-end;
+      }
+
+      #queue p{
+        font-weight: bold;
+        margin:0 auto;
+      }
+
+      #con{
+        width:300px;
+        height: 150px;
+        padding:5px;
+      }
+
+      #inquire{
+        width:300px;
+        height:15px;
+        padding:5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class = "in">
+      <textarea class = "input" id = "con" placeholder = "input anything you want and separated by any symbols"></textarea>
+      <button id = "insert">插入</button>
+      <p id = "tipOne"></p>
+    </div>
+
+    <div class = "quire">
+      <input id = "inquire" type = "text" placeholder = "input what you want to inquire"/>
+      <button id = "inquBtn">查询</button>
+      <button id = "del">重置全部</button>
+      <p id = "tipTwo"></p>
+    </div>
+
+
+    <div id = "queue">
+
+    </div>
+
+    <script type = "text/javascript" src = "./index.js"></script>
+  </body>
+</html>
