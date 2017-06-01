@@ -4,7 +4,7 @@ var hind = document.getElementById("hind");
 var _root = document.getElementById("root");
 var timer = 0;
 
-function travel(Node){
+function travel(Node){//使用 temier += 500 使每个setTimeout能够依次执行
   setTimeout(function(){
     Node.classList.add("ing");
   }, timer += 500);
@@ -14,7 +14,7 @@ function travel(Node){
   }, timer += 500);
 }
 
-function preOrder(Node){
+function preOrder(Node){//先序遍历
   if(Node){
     travel(Node);
     preOrder(Node.children[0]);
@@ -22,7 +22,7 @@ function preOrder(Node){
   }
 }
 
-function midOrder(Node){
+function midOrder(Node){//中序遍历
   if(Node){
     midOrder(Node.children[0]);
     travel(Node);
@@ -30,7 +30,7 @@ function midOrder(Node){
   }
 }
 
-function reaOrder(Node){
+function reaOrder(Node){//后序遍历
   if(Node){
     reaOrder(Node.children[0]);
     reaOrder(Node.children[1]);
@@ -38,7 +38,7 @@ function reaOrder(Node){
   }
 }
 
-front.onclick = function(){
+front.onclick = function(){//每次点击初始化timer，否则第二次执行遍历，时间将延长很多
   timer = 0;
   preOrder(_root);
 }
