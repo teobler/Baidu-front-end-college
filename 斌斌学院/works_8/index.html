@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>任务8-DOM树遍历2</title>
+
+    <style>
+      *{
+        margin: 0;
+        padding:0;
+      }
+
+      div{
+        border:1px solid #999;
+        margin: 20px;
+        display:flex;
+        align-items: center;
+        height: 90%;
+        width:99%;
+      }
+
+      #container{
+        height: 800px;
+        border:none;
+        width:auto;
+      }
+
+      .control{
+        margin-top: 50px;
+        width:98%;
+        border: none;
+        justify-content: center;
+      }
+
+      button{
+        height:50px;
+        width:80px;
+        margin: 20px;
+      }
+
+      .ing{
+        background-color: #e7e7e7;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id = "container">
+      <div id = "root">
+        <p>根节点</p>
+        <div>
+          <p>第二层1</p>
+          <div>
+            <p>第三层1</p>
+            <div><p>第四层1</p></div>
+          </div>
+
+          <div>
+            <p>第三层2</p>
+            <div><p>第四层2</p></div>
+            <div><p>第四层3</p></div>
+            <div><p>第四层4</p></div>
+          </div>
+
+
+          <div>
+            <p>第三层3</p>
+            <div><p>第四层5</p></div>
+            <div><p>第四层6</p></div>
+          </div>
+        </div>
+
+        <div>
+          <p>第二层2</p>
+          <div>
+            <p>第三层4</p>
+            <div><p>第四层7</p></div>
+            <div><p>第四层8</p></div>
+          </div>
+
+          <div>
+            <p>第三层5</p>
+            <div><p>第四层9</p></div>
+
+            <div><p>第四层10</p></div>
+          </div>
+        </div>
+
+        <div>
+          <p>第二层3</p>
+          <div>
+            <p>第三层6</p>
+            <div>
+              <p>第四层11</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "control">
+      <button id = "front">DFS</button>
+      <button id = "mid"></button>
+      <button id = "hind">后序遍历</button>
+    </div>
+
+    <script type = "text/javascript" src = "./index.js"></script>
+  </body>
+</html>
