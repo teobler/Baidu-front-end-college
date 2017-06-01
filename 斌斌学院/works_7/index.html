@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>任务7-DOM树遍历</title>
+
+    <style>
+      *{
+        margin: 0;
+        padding:0;
+      }
+
+      div{
+        border:1px solid #999;
+        margin: 20px;
+        display:flex;
+        align-items: center;
+        height: 90%;
+        width:99%;
+      }
+
+      #container{
+        height: 800px;
+        border:none;
+        width:auto;
+      }
+
+      .control{
+        margin-top: 50px;
+        width:98%;
+        border: none;
+        justify-content: center;
+      }
+
+      button{
+        height:50px;
+        width:80px;
+        margin: 20px;
+      }
+
+      .ing{
+        background-color: #e7e7e7;
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id = "container">
+      <div id = "root">
+        <div id = "twoL">
+          <div id = "thrOne">
+            <div id = "forOne">
+
+            </div>
+
+            <div id = "forTwo">
+
+            </div>
+          </div>
+
+          <div id = "thrTwo">
+            <div id = "forThr">
+
+            </div>
+
+            <div id = "forFor">
+
+            </div>
+          </div>
+        </div>
+
+        <div id = "twoR">
+          <div id = "thrThr">
+            <div id = "forFiv">
+
+            </div>
+
+            <div id = "forSix">
+
+            </div>
+          </div>
+
+          <div id = "thrFor">
+            <div id = "forSev">
+
+            </div>
+
+            <div id = "forEig">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "control">
+      <button id = "front">先序遍历</button>
+      <button id = "mid">中序遍历</button>
+      <button id = "hind">后序遍历</button>
+    </div>
+
+    <script type = "text/javascript" src = "./index.js"></script>
+  </body>
+</html>
