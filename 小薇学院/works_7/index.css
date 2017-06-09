@@ -1,0 +1,72 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  min-width: 1280px;
+}
+
+.top-banner{
+  height: 70px;
+}
+
+.top-logo{
+  height:44px;
+  display: flex;
+  align-items: center;
+  margin:13px 0px 13px 70px;
+  float: left;
+  line-height:30px;
+  font-size: 27px;
+}
+
+.top-logo img{
+  height: 44px;
+  width: 44px;
+  margin-right:12px;
+}
+
+.nav{
+  height:100%;
+}
+
+.nav ul{
+  display: flex;
+  align-items: center;
+  position:absolute;
+  right:40px;
+  list-style: none;
+}
+
+.nav a{
+  display:block;
+  width:80px;
+  height:43px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #777;
+  float: left;
+  margin:22px 37px 0 0;
+  border-bottom:7px solid transparent;         /*不加这个会产生上下移动，原因未知还*/
+}
+
+.nav .login a{
+  color:rgb(231, 79, 77);
+}
+
+.nav ul a:hover{
+  color:rgb(231, 79, 77);
+  border-bottom:7px solid rgb(231, 79, 77);
+}
+
+.publicity{
+  width: 100%;
+}
+
+.big-pho{
+  background: url(./images/big-one.png) no-repeat;
+  background-size: cover;
+  height: 735px;
+}
