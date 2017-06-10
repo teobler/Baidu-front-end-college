@@ -1,6 +1,7 @@
 *{
   padding: 0;
   margin: 0;
+  font-family: "Microsoft YaHei";
 }
 
 body{
@@ -68,5 +69,452 @@ body{
 .big-pho{
   background: url(./images/big-one.png) no-repeat;
   background-size: cover;
-  height: 735px;
+  height: 650px;
+  display: flex;
+  align-items: center;
+}
+
+.pho-inner{
+  margin-left: 12%;
+}
+
+.text-one{
+  color:#fff;
+  font-size: 22px;
+  line-height: 40px;
+  margin-bottom:60px;
+}
+
+.text-one .pho-title{
+  font-size: 58px;
+  line-height: 100px;
+}
+
+.begin{
+  width:330px;
+  height:50px;
+  color:#ddd;
+  font-size: 30px;
+  background-color: rgb(231, 79, 77);
+  border: none;
+  cursor:pointer;
+}
+
+.begin:hover{
+  color:rgb(231, 79, 77);
+  background-color: #fff;
+}
+
+.info{
+  height:200px;
+}
+
+.info-inner{
+  float: left;
+  text-align: center;
+  width:25%;
+}
+
+.info-img{
+  margin:40px 0 40px 0;
+  width:100%;
+  height:45px;
+}
+
+.info-img img{
+  height:45px;
+  width:45px;
+}
+
+.info-text{
+  color:#999;
+  font-size:18px;
+  line-height: 22px;
+  height:38px;
+  padding:20px 130px;
+  border-right: 3px solid #bbb;
+}
+
+.info-text-f{
+  border-right:none;
+}
+
+.main{
+
+}
+
+.main-title{
+  height:350px;
+  padding-top:100px;
+  background: #ededec;
+  color:#a0a1a1;
+  font-size: 50px;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.main-logo{
+  margin-bottom: 20px;
+}
+
+.find{
+  height:430px;
+  color:#fff;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  padding-top: 120px;
+  background: url(./images/picture2.png) no-repeat;
+  background-size: cover;
+}
+
+.find-title{
+  font-size: 40px;
+  margin-bottom:40px;
+}
+
+.selects-con{
+  padding:0 15%;
+  margin-top: 5%;
+}
+
+.selects .selet{
+  width:20%;
+  height:40px;
+  float: left;
+  position: relative;
+  margin-right: 5%;
+  display: inline-block;
+  font-size: 18px;
+  color:#888;
+  background: #fff;
+  border:1px solid transparent;
+}
+
+.selects .selet:hover{
+  border:1px solid rgb(231, 79, 77);
+}
+
+.selects .selet .s-value{
+  position: absolute;
+  left:5%; top:10px;
+}
+
+.selects .selet span{
+  position: absolute;
+  right:5%; top:10px;
+}
+
+.op{
+  width:100%;
+  height:auto;
+  position: absolute;
+  left:-1px; top:100%;
+  color:#666;
+  text-align: left;
+  background: #e3e4e5;
+  border:1px solid rgb(231, 79, 77);
+  display:none;
+}
+
+.selet:hover .op{
+  display: block;
+}
+
+.op p{
+  height:30px;
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 14%;
+  padding-top: 5px;
+  position: relative;
+}
+
+.op p span{
+  position: absolute;
+  left: 0;
+  display: none;
+}
+              /*在这里实现的下拉栏不建议用纯css制作，费时费力，代码繁杂效率低*/
+.op p:hover span{
+  display: inline;
+}
+
+.op img{
+  width: 16px;
+  height: 10px;
+  position: absolute;
+  left: 5%; top:3px;
+}
+
+.selet .op p:hover{
+  color: #fff;
+  background: rgb(231, 79, 77);
+}
+
+#search{
+  width:20%;
+  height:41px;
+  float: left;
+  display: inline-block;
+  font-size: 22px;
+  color:#fff;
+  background: rgb(231, 79, 77);
+  outline: none;
+  border:none;
+}
+
+#search:hover{
+  color: rgb(231, 79, 77);
+  background: #fff;
+}
+
+.activity{
+  height:500px;
+  padding:120px 0;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+}
+
+.act{
+  margin-right:8%;
+  float:left;
+  text-align: center;
+}
+
+.act-four{
+  margin-right: 0;
+}
+
+.act p{
+  line-height: 35px;
+}
+
+.act .cont{
+  color:#777;
+}
+
+.act .tit-cont{
+  font-size: 22px;
+}
+
+.act-two .tit-cont{
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.act .img-war{
+  width:auto;
+  height: inherit;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 4px;
+}
+
+.img-war img{
+  width:220px;
+}
+
+.detail{
+
+}
+
+.spe-top{
+  height:800px;
+}
+
+.top-left{
+  height: 100%;
+  width: 65%;
+  float:left;
+  text-align:center;
+  background: url(./images/picture3.png) no-repeat;
+  background-size:cover;
+  position:relative;
+}
+
+.top-left p{
+  color:#fff;
+}
+
+.tl-t1{
+  margin-top:23%;
+  font-size: 70px;
+  line-height:20px;
+}
+
+.tl-t2{
+  font-size:150px;
+}
+
+.tl-t3{
+  font-size:29px;
+}
+
+.tl-t4{
+  font-size:22px;
+  line-height:40px;
+}
+
+.trian{
+  height:0;
+  width:0;
+  border:40px solid;
+  border-color:transparent #fff transparent transparent;
+  position:absolute;
+  right:0; top:50%;
+}
+
+.top-right{
+  height: 100%;
+  width: 35%;
+  float:left;
+  text-align: center;
+}
+
+.tr-t1{
+  margin-top:17%;
+  font-size:29px;
+}
+
+.tr-t1 i{
+  color:rgb(231, 79, 77);
+}
+
+.tr-t2{
+  font-size: 18px;
+  line-height: 50px;
+  width:60%;
+  color:#777;
+  margin:20px 0 8% 20%;
+}
+
+.more-btn{
+  width:140px;
+  height:50px;
+  background: #fff;
+  font-size:20px;
+  color: rgb(231, 79, 77);
+  border:1px solid rgb(231, 79, 77);
+  margin-bottom:40px;
+  cursor:pointer;
+}
+
+.more-btn:hover{
+  color:#fff;
+  background:rgb(231, 79, 77);
+}
+
+.op-point ul{
+  margin-left:45%;
+}
+
+.op-point ul li{
+  list-style:none;
+  width:10px;
+  height:10px;
+  border:1px solid #777;
+  border-radius:50%;
+  cursor:pointer;
+  float:left;
+  margin-right: 19px;
+}
+
+.first{
+  background-color: #777;
+}
+
+.spe-btm{
+  height:900px;
+}
+
+.btm-left{
+  height: 100%;
+  width: 65%;
+  float:left;
+  text-align:center;
+  background: url(./images/picture4.png) no-repeat;
+  background-size:cover;
+}
+
+.btm-left p{
+  font-size: 24px;
+}
+
+.ll{
+  height:100%;
+  width:50%;
+  float: left;
+  background: rgb(231, 79, 77);
+}
+
+.ll .btn-btm-l{
+  width:200px;
+  font-size: 25px;
+  color:#fff;
+  background: rgb(231, 79, 77);
+  border:1px solid #fff;
+  margin-top: 40px;
+}
+
+.ll-t{
+  color:#fff;
+  line-height: 40px;
+}
+
+.ll-ti{
+  margin-top:45%;
+}
+
+.ll .btn-btm-l:hover{
+  color:rgb(231, 79, 77);
+  background: #fff;
+}
+
+.lr{
+  width: 50%;
+  height:100%;
+  float: left;
+}
+
+.lr-t{
+  line-height: 40px;
+}
+
+.lr-ti{
+  margin-top:45%;
+}
+
+.lr .btn-btm-r{
+  width:200px;
+  font-size: 25px;
+  margin-top: 40px;
+}
+
+.btm-right{
+  width:35%;
+  height:100%;
+  float: left;
+  background: url(./images/train.png) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.cover{
+  display: block;
+  width:100%;
+  height:100%;
+  background-color: #000;
+  opacity: 0.6;
+}
+
+.trianr{
+  width:0;
+  height:0;
+  border:40px solid;
+  border-color:transparent transparent transparent #fff;
+  position:absolute;
+  left: 0; top: 50%;
+  z-index: 1;
 }
