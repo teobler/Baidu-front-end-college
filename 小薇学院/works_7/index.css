@@ -8,6 +8,10 @@ body{
   min-width: 1280px;
 }
 
+.clear{
+  clear: both;
+}
+
 .top-banner{
   height: 70px;
 }
@@ -407,7 +411,8 @@ body{
 }
 
 .op-point ul{
-  margin-left:45%;
+  display:flex;
+  justify-content:center;
 }
 
 .op-point ul li{
@@ -517,4 +522,195 @@ body{
   position:absolute;
   left: 0; top: 50%;
   z-index: 1;
+}
+
+.protocol{
+
+}
+
+.pro-top{
+  height:350px;
+  text-align:center;
+}
+
+.pro-top-title{
+  margin: 8% 0 30px 0;
+  font-size: 45px;
+  line-height: 60px;
+}
+
+.pro-top-text{
+  color:#777;
+  font-size:25px;
+  line-height:35px;
+}
+
+.pro-main{
+  height:450px;
+  width:28%;
+  padding-left: 11%;
+  float:left;
+  position: relative;
+}
+
+.pro-one{
+  height:40%;
+}
+
+.pro-two{
+  height:40%;
+}
+
+.pro-title{
+  font-size: 26px;
+}
+
+.pro-text{
+  font-size: 18px;
+  line-height: 35px;
+  color:#777;
+  margin-top: 30px;
+}
+
+.more-pro{
+  margin-top:20px;
+  cursor:pointer;
+  position:absolute;
+  right:0;
+}
+
+.pro-form{
+  float:left;
+  width:45%;
+  padding:0 8% 0 6%;
+}
+
+.pro-form input{
+  height:50px;
+  width:46%;
+  padding-left: 2%;
+  margin:0 3% 15px 0;
+  font-size:18px;
+  background: #edecee;
+  border:none;
+  outline:none;
+}
+
+.pro-form .non{
+  margin-right: 0;
+}
+
+.pro-form textarea{
+  height:220px;
+  width:97%;
+  padding:1.5%;
+  margin-bottom:15px;
+  font-size:18px;
+  background: #edecee;
+  border:none;
+  outline:none;
+  resize:none;
+}
+
+.pro-form button{
+  height:50px;
+  width:100%;
+  padding:1.5%;
+  margin-bottom:15px;
+  font-size:18px;
+  background: #edecee;
+  border:none;
+  outline:none;
+  cursor:pointer;
+}
+
+.footer{
+  height:460px;
+  padding-top: 60px;
+  margin-top:300px;
+  background: #32353e;
+  color:#fff;
+}
+
+.contact-us{
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.contact-us .contact{
+  font-size: 28px;
+  line-height: 90px;
+  margin-top: 60px;
+}
+
+.contact-us .sub-email{
+  height:45px;
+  width:30%;
+  display: inline-block;
+  text-align: left;
+  background: #fff;
+  margin-top: 40px;
+  font-size:18px;
+  z-index: 100;
+  overflow: hidden;
+  position: relative;
+}
+
+.sub-email input{
+  height:45px;
+  width:90%;
+  padding-left: 2%;
+  margin-top:3px;
+  font-size:18px;
+  border:none;
+  outline:none;
+}
+
+.contact-us button{
+  height:45px;
+  width:80px;
+  color: #fff;
+  font-size:18px;
+  position: absolute;
+  right: 0;
+  background: #6f7278;
+  border:none;
+  outline: none;
+  cursor:pointer;
+}
+
+.social{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.social img{
+  margin-right: 20px;
+}
+
+.social .non{
+  margin-right: 0;
+}
+
+.bottom{
+  background: #2f2f38;
+  height:80px;
+  position: relative;
+}
+
+.bottom p{
+  position: absolute;
+  left:5%; bottom:40%;
+}
+
+.bottom a{
+  position: absolute;
+  right:3%; bottom:15%;
+  color:#fff;
+  text-decoration: none;
+}
+
+.bottom a:hover{
+  text-decoration: underline;
 }
